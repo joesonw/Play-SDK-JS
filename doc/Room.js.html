@@ -1,0 +1,318 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source: Room.js | @leancloud/play</title>
+    <link type="text/css" rel="stylesheet" href="styles/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+</head>
+<body>
+<div class="main-container">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label for="nav-trigger" class="navicon-button x">
+      <div class="navicon"></div>
+    </label>
+    <label for="nav-trigger" class="overlay"></label>
+    <nav class="lnb" id="lnb">
+        <div class="nav-main">
+            <h1><a href="index.html" class="link">@leancloud/play</a></h1>
+            <span class="version">
+            
+                v0.18.0-beta.1
+            
+            </span>
+        </div>
+        <div class="nav-search js-search">
+            <input type="text" placeholder="Search docs">
+            <ul class="searched-list"></ul>
+        </div>
+
+        
+
+        <div class="scroll">
+        <div class="nav-api hidden"><h3>Global</h3><ul><li class="nav-item"><a href="global.html#CreateRoomFlag">CreateRoomFlag</a></li><li class="nav-item"><a href="global.html#Event">Event</a></li><li class="nav-item"><a href="global.html#LogLevel">LogLevel</a></li><li class="nav-item"><a href="global.html#ReceiverGroup">ReceiverGroup</a></li><li class="nav-item"><a href="global.html#setAdapters">setAdapters</a></li></ul></div><div class="nav-api hidden"><h3>Classes</h3><ul class="nav-items"><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Client.html">Client</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Client_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Client.html#lobbyRoomList">lobbyRoomList</a></a></li><li class="sub-nav-item "><a href="Client.html#player">player</a></a></li><li class="sub-nav-item "><a href="Client.html#room">room</a></a></li><li class="sub-nav-item "><a href="Client.html#userId">userId</a></a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Client.html#close">close</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#connect">connect</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#createRoom">createRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#joinLobby">joinLobby</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#joinOrCreateRoom">joinOrCreateRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#joinRandomRoom">joinRandomRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#joinRoom">joinRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#kickPlayer">kickPlayer</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#leaveLobby">leaveLobby</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#leaveRoom">leaveRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#pauseMessageQueue">pauseMessageQueue</a></a></li><li class="sub-nav-item "><a href="Client.html#reconnect">reconnect</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#reconnectAndRejoin">reconnectAndRejoin</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#rejoinRoom">rejoinRoom</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#resumeMessageQueue">resumeMessageQueue</a></a></li><li class="sub-nav-item "><a href="Client.html#sendEvent">sendEvent</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#setMaster">setMaster</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#setRoomOpened">setRoomOpened</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Client.html#setRoomVisible">setRoomVisible</a> <span class="async"> async</span></a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="LobbyRoom.html">LobbyRoom</a>
+                </header>
+                <div class="nav-item-sub hidden" id="LobbyRoom_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="LobbyRoom.html#customRoomProperties">customRoomProperties</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#emptyRoomTtl">emptyRoomTtl</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#expectedUserIds">expectedUserIds</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#maxPlayerCount">maxPlayerCount</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#playerCount">playerCount</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#playerTtl">playerTtl</a></a></li><li class="sub-nav-item "><a href="LobbyRoom.html#roomName">roomName</a></a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Player.html">Player</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Player_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Player.html#actorId">actorId</a></a></li><li class="sub-nav-item "><a href="Player.html#customProperties">customProperties</a></a></li><li class="sub-nav-item "><a href="Player.html#isActive">isActive</a></a></li><li class="sub-nav-item "><a href="Player.html#isLocal">isLocal</a></a></li><li class="sub-nav-item "><a href="Player.html#isMaster">isMaster</a></a></li><li class="sub-nav-item "><a href="Player.html#userId">userId</a></a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Player.html#setCustomProperties">setCustomProperties</a> <span class="async"> async</span></a></li></ul></div></div>
+            </li><li class="nav-item">
+                <header>
+                    <span class="toggle-subnav invisible btn btn-link fa fa-plus"></span>
+                    <a href="Room.html">Room</a>
+                </header>
+                <div class="nav-item-sub hidden" id="Room_sub"><div><div class="member-type">Members</div><ul class="inner"><li class="sub-nav-item "><a href="Room.html#customProperties">customProperties</a></a></li><li class="sub-nav-item "><a href="Room.html#expectedUserIds">expectedUserIds</a></a></li><li class="sub-nav-item "><a href="Room.html#master">master</a></a></li><li class="sub-nav-item "><a href="Room.html#masterId">masterId</a></a></li><li class="sub-nav-item "><a href="Room.html#maxPlayerCount">maxPlayerCount</a></a></li><li class="sub-nav-item "><a href="Room.html#name">name</a></a></li><li class="sub-nav-item "><a href="Room.html#opened">opened</a></a></li><li class="sub-nav-item "><a href="Room.html#playerList">playerList</a></a></li><li class="sub-nav-item "><a href="Room.html#visible">visible</a></a></li></ul></div><div><div class="member-type">Methods</div><ul class="inner"><li class="sub-nav-item "><a href="Room.html#getPlayer">getPlayer</a></a></li><li class="sub-nav-item "><a href="Room.html#kickPlayer">kickPlayer</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#leave">leave</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#sendEvent">sendEvent</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#setCustomProperties">setCustomProperties</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#setMaster">setMaster</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#setOpened">setOpened</a> <span class="async"> async</span></a></li><li class="sub-nav-item "><a href="Room.html#setVisible">setVisible</a> <span class="async"> async</span></a></li></ul></div></div>
+            </li></ul></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Docs</a> »</li>
+            <li>Source: Room.js</li>
+        </ul>
+        <hr>
+        
+
+
+
+    
+<article>
+    <pre class="prettyprint source linenums"><code>import Player from './Player';
+import ReceiverGroup from './ReceiverGroup';
+
+/**
+ * 房间类
+ */
+export default class Room {
+  /* eslint no-param-reassign: ["error", { "props": false }] */
+  static _newFromJSONObject(roomJSONObject) {
+    const room = new Room();
+    room._name = roomJSONObject.cid;
+    room._opened = roomJSONObject.open;
+    room._visible = roomJSONObject.visible;
+    room._maxPlayerCount = roomJSONObject.maxMembers;
+    room._masterActorId = roomJSONObject.masterActorId;
+    room._expectedUserIds = roomJSONObject.expectMembers;
+    room._players = {};
+    for (let i = 0; i &lt; roomJSONObject.members.length; i += 1) {
+      const playerDTO = roomJSONObject.members[i];
+      const player = Player._newFromJSONObject(playerDTO);
+      room._players[player.actorId] = player;
+    }
+    if (roomJSONObject.attr) {
+      room._properties = roomJSONObject.attr;
+    } else {
+      room._properties = {};
+    }
+    return room;
+  }
+
+  /**
+   * 房间名称
+   * @type {String}
+   * @readonly
+   */
+  get name() {
+    return this._name;
+  }
+
+  /**
+   * 房间是否开启
+   * @type {Boolean}
+   * @readonly
+   */
+  get opened() {
+    return this._opened;
+  }
+
+  /**
+   * 房间是否可见
+   * @type {Boolean}
+   * @readonly
+   */
+  get visible() {
+    return this._visible;
+  }
+
+  /**
+   * 房间允许的最大玩家数量
+   * @type {Number}
+   * @readonly
+   */
+  get maxPlayerCount() {
+    return this._maxPlayerCount;
+  }
+
+  /**
+   * 获取房主
+   * @type {Player}
+   * @readonly
+   */
+  get master() {
+    return this.getPlayer(this.masterId);
+  }
+
+  /**
+   * 房间主机玩家 ID
+   * @type {Number}
+   * @readonly
+   */
+  get masterId() {
+    return this._masterActorId;
+  }
+
+  /**
+   * 邀请的好友 ID 列表
+   * @type {Array.&lt;String>}
+   * @readonly
+   */
+  get expectedUserIds() {
+    return this._expectedUserIds;
+  }
+
+  /**
+   * 根据 actorId 获取 Player 对象
+   * @param {Number} actorId 玩家在房间中的 Id
+   * @return {Player}
+   */
+  getPlayer(actorId) {
+    if (!(typeof actorId === 'number')) {
+      throw new TypeError(`${actorId} is not a number`);
+    }
+    if (actorId === -1) return null;
+    const player = this._players[actorId];
+    if (player === null) {
+      throw new Error(`player with id:${actorId} not found`);
+    }
+    return player;
+  }
+
+  /**
+   * 获取房间内的玩家列表
+   * @type {Array.&lt;Player>}
+   * @readonly
+   */
+  get playerList() {
+    return Object.values(this._players);
+  }
+
+  /**
+   * 设置房间的自定义属性
+   * @param {Object} properties 自定义属性
+   * @param {Object} [opts] 设置选项
+   * @param {Object} [opts.expectedValues] 期望属性，用于 CAS 检测
+   */
+  async setCustomProperties(properties, { expectedValues = null } = {}) {
+    return this._play._setRoomCustomProperties(properties, expectedValues);
+  }
+
+  /**
+   * 获取自定义属性
+   * @type {Object}
+   * @readonly
+   */
+  get customProperties() {
+    return this._properties;
+  }
+
+  /**
+   * 离开房间
+   */
+  async leave() {
+    return this._play.leaveRoom();
+  }
+
+  /**
+   * 踢人
+   * @param {Number} actorId 踢用户的 actorId
+   * @param {Object} [opts] 附带参数
+   * @param {Number} [opts.code] 编码
+   * @param {String} [opts.msg] 附带信息
+   */
+  async kickPlayer(actorId, { code = null, msg = null } = {}) {
+    return this._play.kickPlayer(actorId, { code, msg });
+  }
+
+  /**
+   * 设置房间开启 / 关闭
+   * @param {Boolean} opened 是否开启
+   */
+  async setOpened(opened) {
+    return this._play.setRoomOpened(opened);
+  }
+
+  /**
+   * 设置房间可见 / 不可见
+   * @param {Boolean} visible 是否可见
+   */
+  async setVisible(visible) {
+    return this._play.setRoomVisible(visible);
+  }
+
+  /**
+   * 设置房主
+   * @param {Number} newMasterId 新房主 ID
+   */
+  async setMaster(newMasterId) {
+    return this._play.setMaster(newMasterId);
+  }
+
+  /**
+   * 发送自定义消息
+   * @param {Number|String} eventId 事件 ID
+   * @param {Object} eventData 事件参数
+   * @param {Object} options 发送事件选项
+   * @param {ReceiverGroup} options.receiverGroup 接收组
+   * @param {Array.&lt;Number>} options.targetActorIds 接收者 Id。如果设置，将会覆盖 receiverGroup
+   */
+  async sendEvent(
+    eventId,
+    eventData = {},
+    options = { receiverGroup: ReceiverGroup.All }
+  ) {
+    return this._play.sendEvent(eventId, eventData, options);
+  }
+
+  _addPlayer(newPlayer) {
+    if (!(newPlayer instanceof Player)) {
+      throw new TypeError(`${newPlayer} is not a Player`);
+    }
+    this._players[newPlayer.actorId] = newPlayer;
+    newPlayer._play = this._play;
+  }
+
+  _removePlayer(actorId) {
+    delete this._players[actorId];
+  }
+
+  _mergeProperties(changedProperties) {
+    this._properties = Object.assign(this._properties, changedProperties);
+  }
+}
+</code></pre>
+</article>
+
+
+
+
+
+        <hr>
+        <footer>
+            <strong></strong><br/>
+            Documented with <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+        </footer>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+
+window.isApi = true
+window.isManual = false
+window.doc = {
+    name: '',
+    longname: '',
+}
+
+if (!doc.name) isApi = false
+
+</script>
+<script src="js/rtd.js"></script>
+</body>
+</html>
